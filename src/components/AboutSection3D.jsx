@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
@@ -96,23 +98,14 @@ export default function AboutSection3D() {
             <div className="absolute bottom-10 right-10 w-[300px] h-[300px] bg-error/20 blur-3xl rounded-full"></div>
 
             {/* 3D Athlete */}
-            <img
+            <Image
               ref={imgRef}
               src="/image/Athlete.png"
               alt="Athlete"
-              className="
-                absolute
-                bottom-0
-                right-0
-                z-10
-                h-[600px] md:h-[700px]
-                object-contain
-                drop-shadow-2xl
-                will-change-transform
-              "
-              style={{
-                transformStyle: "preserve-3d",
-              }}
+              width={700}
+              height={700}
+              className="absolute bottom-0 right-0 z-10 h-[600px] md:h-[700px] w-auto object-contain drop-shadow-2xl will-change-transform"
+              style={{ transformStyle: "preserve-3d" }}
             />
           </div>
 
