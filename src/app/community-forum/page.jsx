@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL;
 
-const CommunityForumPage = async () => {
+const CommunityForumPage = async ({ limit }) => {
   let posts = [];
 
   try {
@@ -12,7 +12,7 @@ const CommunityForumPage = async () => {
     });
 
     const data = await res.json();
-    posts = data;
+    posts = limit ? data.slice(0, limit) : data;
   } catch (error) {
     console.log("Forum fetch error:", error);
   }
