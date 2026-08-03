@@ -93,7 +93,7 @@ const Navbar = () => {
                 All Classes
               </Link>
               <Link
-                href="/products"
+                href="/community-forum"
                 className="font-medium text-accent"
                 aria-current="page"
               >

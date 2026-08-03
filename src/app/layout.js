@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${Bruno.className} h-full antialiased`}>
+    <html lang="en" className={`${Bruno.className} h-full antialiased suppressHydrationWarning`}>
       <body>
         <Navbar />
         <main >

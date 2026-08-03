@@ -36,5 +36,5 @@ export const imageUploader = async (image) => {
     throw new Error(data.error?.message || "Image upload failed");
   }
 
-  return data.data;
+  return data.data.url;
 };
