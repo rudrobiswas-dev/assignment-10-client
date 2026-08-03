@@ -79,6 +79,13 @@ const Navbar = () => {
           <ul className="hidden items-center gap-5 md:flex">
             <li className="flex gap-10">
               <Link
+                href="/"
+                className="font-medium text-accent"
+                aria-current="page"
+              >
+                Home
+              </Link>
+              <Link
                 href="/products"
                 className="font-medium text-accent"
                 aria-current="page"

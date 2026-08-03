@@ -121,8 +121,8 @@ import { Avatar, Dropdown, Label } from "@heroui/react";
 import { Bell, Search } from "lucide-react";
 import { BiLogOut } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
-import { FiSettings } from "react-icons/fi";
 import ThemeToggle from "../ThemeToggle";
+import Link from "next/link";
 
 const DashboardNavbar = () => {
   const { data: session } = authClient.useSession();
@@ -137,7 +137,7 @@ const DashboardNavbar = () => {
       <div className="flex h-20 items-center justify-between px-8">
         {/* Left */}
         <div>
-          <p className="text-sm font-medium uppercase tracking-[4px] text-cyan-500">
+          <p className="text-sm font-medium uppercase tracking-[4px] text-orange-500">
             Blacksmith Athletics
           </p>
 
@@ -196,7 +196,7 @@ const DashboardNavbar = () => {
                     </h3>
 
                     <p className="text-xs text-gray-500">
-                      Trainer
+                      {user.role}
                     </p>
                   </div>
                 </div>
@@ -226,20 +226,12 @@ const DashboardNavbar = () => {
                 </div>
 
                 <Dropdown.Menu className="p-3">
-                  <Dropdown.Item id="profile">
+                  
+                  <Dropdown.Item as={Link} href="/" id="home">
                     <CgProfile className="mr-3 text-lg" />
-                    <Label>My Profile</Label>
+                    <Label>Home</Label>
                   </Dropdown.Item>
 
-                  <Dropdown.Item id="settings">
-                    <FiSettings className="mr-3 text-lg" />
-                    <Label>Settings</Label>
-                  </Dropdown.Item>
-
-                  <Dropdown.Item id="membership">
-                    💳
-                    <Label>Membership</Label>
-                  </Dropdown.Item>
 
                   <Dropdown.Item
                     id="logout"

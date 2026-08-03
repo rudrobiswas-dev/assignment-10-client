@@ -1,5 +1,6 @@
 import dns from "node:dns"
 dns.setServers(['1.1.1.1', '1.0.0.1']);
+import { Toaster } from "react-hot-toast";
 
 // import { Inter } from "next/font/google";
 import "./globals.css";
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main >
           {children}
+          <Toaster position="top-right" />
         </main>
 
         <Footer/>

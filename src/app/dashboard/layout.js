@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
       {/* Sidebar */}
       <aside className="fixed inset-y-0 left-0 w-64 bg-white border-r border-gray-200 shadow-sm">
         <div className="flex items-center justify-center h-16 border-b border-gray-200">
-          <h1 className="text-xl font-bold text-gray-800">Dashboar</h1>
+          <h1 className="text-xl font-bold text-gray-800">Dashboard</h1>
         </div>
         
         {/* Navigation Menu */}

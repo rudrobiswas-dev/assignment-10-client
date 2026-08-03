@@ -123,6 +123,27 @@ export default function SignUpPage() {
 
         <ListBox.ItemIndicator />
       </ListBox.Item>
+
+      <ListBox.Item
+        id="admin"
+        textValue="admin"
+        className="rounded-lg transition-all hover:bg-success/20 data-[selected]:bg-success/25"
+      >
+        <div className="flex items-center gap-3">
+          <div className="rounded-lg bg-success/15 p-2">
+            <FaStore className="text-success" />
+          </div>
+
+          <div>
+            <p className="font-medium">admin</p>
+            <p className="text-xs text-default-500">
+              admin
+            </p>
+          </div>
+        </div>
+
+        <ListBox.ItemIndicator />
+      </ListBox.Item>
     </ListBox>
   </Select.Popover>
 </Select>

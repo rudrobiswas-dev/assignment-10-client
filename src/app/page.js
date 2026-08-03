@@ -11,8 +11,8 @@ export default function Home() {
       <AboutSection3D/>
       <BannerSlider/>
       <Features/>
-      <CommunityForum/>
       <LocationSection/>
+      <CommunityForum/>
     </div>
   );
 }
