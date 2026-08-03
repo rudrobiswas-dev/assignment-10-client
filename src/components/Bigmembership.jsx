@@ -1,5 +1,5 @@
 "use client";
-export default function BigMemberShip() {
+export default function Bigmembership() {
   return (
     <section className="pt-14 bg-base-100">
       <div className="bg-error py-8 overflow-hidden ">

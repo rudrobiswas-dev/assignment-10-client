@@ -3,7 +3,7 @@ import BannerSlider from "@/components/Banner";
 import Features from "@/components/Features";
 import LocationSection from "@/components/LocationSection";
 import CommunityForumPage from "./community-forum/page";
-import BigMemberShip from "@/components/BigMemberShip";
+import Bigmembership from "@/components/Bigmembership";
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <BannerSlider/>
       <Features/>
       <LocationSection/>
-      <BigMemberShip/>
+      <Bigmembership/>
       <CommunityForumPage limit={3} />
     </div>
   );
