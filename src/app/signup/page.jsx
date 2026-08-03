@@ -123,7 +123,7 @@ export default function SignUpPage() {
 
         <ListBox.ItemIndicator />
       </ListBox.Item>
-
+{/* 
       <ListBox.Item
         id="admin"
         textValue="admin"
@@ -143,7 +143,7 @@ export default function SignUpPage() {
         </div>
 
         <ListBox.ItemIndicator />
-      </ListBox.Item>
+      </ListBox.Item> */}
     </ListBox>
   </Select.Popover>
 </Select>
