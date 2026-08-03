@@ -165,7 +165,13 @@ const DashboardNavbar = () => {
           </div>
 
           <ThemeToggle />
-
+          <Link
+                href="/"
+                className="font-medium text-accent"
+                aria-current="page"
+              >
+                Home
+              </Link>
           {/* Notification */}
           <button
             type="button"

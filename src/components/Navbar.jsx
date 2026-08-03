@@ -157,10 +157,10 @@ const Navbar = () => {
                   
                     </Dropdown.Item>
 
-                    <Dropdown.Item id="copy-link" textValue="Copy link">
+                    {/* <Dropdown.Item id="copy-link" textValue="Copy link">
                       <CgProfile />
                       <Label>Profile</Label>
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
 
                     <Dropdown.Item
                       id="delete-file"
